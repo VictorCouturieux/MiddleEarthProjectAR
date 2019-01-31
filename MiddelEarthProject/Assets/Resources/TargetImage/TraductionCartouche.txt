@@ -1,0 +1,5 @@
+Traduction du cartouche  
+Terre du milieu dessinée et complétée par Norin le Nain et Kiri de la forêt de la nuit 
+d'après les renseignements de Pengolod des îles bienheureuses.
+
+https://developer.vuforia.com/forum/creating-ar-trackables/using-terrain-scene

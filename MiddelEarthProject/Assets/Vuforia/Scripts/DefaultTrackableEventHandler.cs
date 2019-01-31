@@ -85,11 +85,13 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
+        var terrainComponents = GetComponentsInChildren<Terrain>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
-        Terrain[] terrainComponents = GetComponentsInChildren<Terrain>();
-        
+
         foreach(Terrain component in terrainComponents )
+        {
             component.enabled = true;
+        }
         
         // Enable rendering:
         foreach (var component in rendererComponents)
@@ -102,7 +104,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
-//        Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
     }
 
 
@@ -110,14 +111,13 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     {
         var rendererComponents = GetComponentsInChildren<Renderer>(true);
         var colliderComponents = GetComponentsInChildren<Collider>(true);
+        var terrainComponents = GetComponentsInChildren<Terrain>(true);
         var canvasComponents = GetComponentsInChildren<Canvas>(true);
-        Terrain[] terrainComponents = GetComponentsInChildren<Terrain>();
 
         foreach(Terrain component in terrainComponents )
         {
             component.enabled = false;
         }
-        
         // Disable rendering:
         foreach (var component in rendererComponents)
             component.enabled = false;
@@ -128,8 +128,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
         // Disable canvas':
         foreach (var component in canvasComponents)
-            component.enabled = false;   
-//        Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+            component.enabled = false;
     }
 
     #endregion // PROTECTED_METHODS
