@@ -22,7 +22,7 @@ public class CartoucheFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(transform.rotation.x);
+//        Debug.Log(transform.rotation.x);
         
         cartouche.rotation = new Quaternion(
             transform.rotation.x,
