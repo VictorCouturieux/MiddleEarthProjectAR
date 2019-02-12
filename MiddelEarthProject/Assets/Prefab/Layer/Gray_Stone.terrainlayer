@@ -6,8 +6,8 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NewLayer 3
-  m_DiffuseTexture: {fileID: 2800000, guid: 28ae5965f6f8e004f8d3e561f64e775a, type: 3}
+  m_Name: Gray_Stone
+  m_DiffuseTexture: {fileID: 2800000, guid: ab082815b83ba5c489abb918909ae985, type: 3}
   m_NormalMapTexture: {fileID: 0}
   m_MaskMapTexture: {fileID: 0}
   m_TileSize: {x: 2, y: 2}
