@@ -8,6 +8,7 @@ public class TestRayCastToSelectionFlag : MonoBehaviour
     private float range = 10000000.0f;
     public Camera vuforiaCamera;
     private Collider coll;
+    public GameObject labelAssocied =null;
     
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,18 @@ public class TestRayCastToSelectionFlag : MonoBehaviour
             {
                 if (hit.transform == transform)
                 {
-                    Debug.Log("detect " + hit.transform.name);
+//                    Debug.Log("detect " + hit.transform.name);
+                    if (labelAssocied!=null)
+                    {
+                        if (labelAssocied.activeSelf)
+                        {
+                            labelAssocied.SetActive(false);
+                        }
+                        else
+                        {
+                            labelAssocied.SetActive(true);
+                        }
+                    }
                 }
             }
 

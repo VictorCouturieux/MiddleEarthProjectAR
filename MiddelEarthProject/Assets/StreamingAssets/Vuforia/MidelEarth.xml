@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="terreDuMillieux2" size="500.000000 309.381989" />
     <ImageTarget name="terreDuMillieuxCartouche" size="590.000000 434.000000" />
     <ImageTarget name="terreDuMillieux" size="4029.000000 2493.000000" />
   </Tracking>
